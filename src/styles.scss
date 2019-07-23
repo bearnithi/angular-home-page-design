@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  color: #4c4c4c;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-control {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #adadad;
+  border-radius: 6px;
+  transition: border .2s;
+
+  &:focus {
+    border: 1px solid #ea9700;
+    outline: none;
+  }
+}
+
+.text-right {
+  text-align: right;
+}

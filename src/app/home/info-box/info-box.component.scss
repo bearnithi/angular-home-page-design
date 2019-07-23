@@ -1,0 +1,41 @@
+.info-box {
+    padding: 80px;
+    background: #dedede;
+    display: flex;
+    justify-content: space-between;
+
+    & .info {
+        flex: 1 1 40%;
+        color: #9c9999;
+        line-height: 2;
+    }
+
+    & .image {
+        flex: 1 1 60%;
+        display: flex;
+        justify-content: flex-end    
+    }
+
+    & .image img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.title {
+    color: #333;
+    padding: 7px;
+    font-size: 40px;
+    margin-bottom: 0;
+
+    &--bg {
+        background-image: url(../../../assets/images/key_feature_bg.png);
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+
+    &-tag {
+        color: #908c8c;
+        text-align: center;
+    }
+}

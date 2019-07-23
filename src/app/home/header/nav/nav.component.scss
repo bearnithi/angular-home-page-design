@@ -1,0 +1,22 @@
+.main-nav {
+    & .nav-lists {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    & .nav-item {
+       padding: 10px;
+
+        & .nav-link {
+            text-decoration: none;
+            color: #fff;
+            transition: all .3s;
+        }
+
+        & .nav-link:hover {
+            color: var(--color-primary);
+        }
+    }
+}

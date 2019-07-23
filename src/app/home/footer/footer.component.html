@@ -1,3 +1,23 @@
-<p>
-  footer works!
-</p>
+<section class="footer">
+  <div class="footer-logo">
+    <img src="../../../assets/images/logo.png" />
+  </div>
+  <div class="footer-lists">
+
+    <app-footer-list [links]="links">
+      <h5>Services</h5>
+    </app-footer-list>
+    
+    <app-footer-list [links]="links">
+      <h5>Products</h5>
+    </app-footer-list>
+
+    <app-footer-list [links]="links">
+      <h5>Contact</h5>
+    </app-footer-list>
+
+    <app-footer-list [links]="links">
+      <h5>Social</h5>
+    </app-footer-list>
+  </div>
+</section>

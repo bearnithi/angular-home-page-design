@@ -1,0 +1,48 @@
+.header {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #0e3abf 20%, #476ee2 40%, #2b8af4);
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.title {
+    color: #333;
+    text-align: center;
+    padding: 7px;
+    font-size: 40px;
+    margin-bottom: 0;
+
+    &--bg {
+        background-image: url(../../assets/images/key_feature_bg.png);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &-tag {
+        color: #908c8c;
+        text-align: center;
+    }
+}
+
+.description {
+    text-align: center;
+    color: #908c8c;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 160px;
+    cursor: pointer;
+    
+
+    & .feature {
+        margin: 20px;
+    }
+
+    & .selected {
+        box-shadow: 3px 3px 1rem #c7c7c7;
+    }
+}

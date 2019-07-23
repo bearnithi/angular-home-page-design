@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #f39203;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .form-group {
@@ -31,4 +39,32 @@
 
 .text-right {
   text-align: right;
+}
+
+
+.btn {
+  background: var(--color-primary);
+  border: 1px solid #e28800;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 0.5rem #5f5f5f;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:disabled {
+    color: #bbbbbb;
+    background: #d8d8d8;
+  }
+
+  &-light {
+    background: #fff;
+    color: #333;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background: #e28800;
+    color: #fff;
+  }
 }

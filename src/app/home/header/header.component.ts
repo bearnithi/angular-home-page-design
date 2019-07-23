@@ -12,7 +12,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.links = [
       'Home',
+      'About',
       'Features',
+      'Products',
+      'IT Security',
       'Contact'
     ]
   }

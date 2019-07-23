@@ -1,3 +1,22 @@
-<p>
-  feature works!
-</p>
+<div class="feature">
+  <div class="feature-header">
+    <img [src]="feature.img" />
+    <h2>{{ feature.name }}</h2>
+
+  </div>
+
+  <p class="feature-info">
+    <ng-container *ngIf="feature.btn; else msg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi ex itaque non illo reprehenderit optio molestiae et quo. Aperiam, iste? Excepturi velit cumque nam dolores aliquam praesentium, quisquam laudantium!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore porro ducimus necessitatibus eveniet, reprehenderit modi perferendis harum corrupti totam laborum in obcaecati quis magni voluptates ipsam blanditiis natus! Quibusdam, repellat?
+    </ng-container>
+
+    <ng-template #msg>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam voluptatibus aspernatur accusamus iusto
+        accusantium, vitae dolorem. Aspernatur,
+    
+    </ng-template>
+  </p>
+
+  <button *ngIf="feature.btn" class="btn btn-light">View Details</button>
+</div>

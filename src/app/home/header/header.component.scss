@@ -1,0 +1,10 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 80px;
+
+    & > * {
+        flex: 1 1 auto;
+    }
+}

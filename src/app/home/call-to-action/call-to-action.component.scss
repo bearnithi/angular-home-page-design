@@ -1,0 +1,27 @@
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 80px 80px;
+    padding-bottom: 80px;
+    min-height: 85vh;
+    align-items: center;
+
+    & .content, & .image {
+        flex: 1 1 auto;
+    }
+}
+
+.content {
+    align-self: center;
+    color: #fff;
+
+    & h1 {
+        font-size: 42px;
+    }
+}
+
+.image {
+    & img {
+        max-width: 100%;
+    }
+}

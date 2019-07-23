@@ -1,1 +1,26 @@
-<app-header></app-header>
+<div class="header">
+    <app-header></app-header>
+    <app-call-to-action></app-call-to-action>
+</div>
+
+<h2 class="title title--bg">Key Features</h2>
+<div class="features">
+    <app-feature class="feature" *ngFor="let feature of features; let i = index" [feature]="feature"
+    (click)="selectedFeature = i" [ngClass]="{'selected': selectedFeature === i}"></app-feature>
+</div>
+
+<app-info-box></app-info-box>
+
+<h2 class="title">Products For You</h2>
+<h5 class="title-tag">GET THE BEST PRODUCT YOU CAN'T FIND ANYWHERE</h5>
+<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime distinctio tempora possimus doloremque veniam a doloribus beatae dolore in, soluta nobis, eaque quidem natus quae itaque magnam ab inventore? Delectus.</p>
+<div class="features">
+    <app-feature class="feature" *ngFor="let product of products; let i = index" [feature]="product"
+    (click)="selectedProduct = i" [ngClass]="{'selected': selectedProduct === i}"></app-feature>
+</div>
+
+<app-subscribe></app-subscribe>
+
+<app-footer>
+    
+</app-footer>

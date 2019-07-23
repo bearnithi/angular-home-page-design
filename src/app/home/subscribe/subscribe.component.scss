@@ -1,0 +1,28 @@
+.subscribe {
+    background: linear-gradient(to top left, #0e3abf 20%, #476ee2 40%, #2b8af4);
+    clip-path: polygon(0 27%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 80px;
+    color: #fff;
+    text-align: center;
+
+    & .sub {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    & .sub-box {
+        display: flex;
+    }
+
+    .email {
+        background: transparent;
+        border-radius: 10px;
+        border-color: #fff;
+        margin-right: 10px;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+}

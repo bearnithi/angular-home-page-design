@@ -1,15 +1,15 @@
 <section class="login-container">
-  <form [formGroup]="loginForm">
+  <form>
     <div class="form-group">
       <label class="form-label">Email</label>
-      <app-email formControlName="email"></app-email>
+      <app-email [(ngModel)]="email" name="email"></app-email>
     </div>
     <div class="form-group">
       <label class="form-label">Password</label>
-      <app-password formControlName="password"></app-password>
+      <app-password [(ngModel)]="password" name="password"></app-password>
     </div>
     <div class="text-right">
-      <app-button [disabled]="loginForm.invalid" (btnclick)="login()">Login</app-button>
+      <app-button (btnclick)="login()">Login</app-button>
     </div>
 
   </form>

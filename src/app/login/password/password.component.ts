@@ -20,12 +20,11 @@ export class PasswordComponent implements ControlValueAccessor {
 
   onChange(event) {
 
-    this.propagateChange(this.val);
+   
   }
 
   onTouch(event) {
-
-    this.propagateChange(this.val);
+   
   }
 
   set value(val) {
@@ -39,11 +38,11 @@ export class PasswordComponent implements ControlValueAccessor {
   }
 
   registerOnChange(fn: any) {
-    this.propagateChange = fn;
+    this.onChange = fn;
   }
 
   registerOnTouched(fn: any) {
-    this.propagateChange = fn;
+    this.onTouch = fn;
   }
 
   private propagateChange = (_: any) => { };

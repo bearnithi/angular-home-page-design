@@ -55,6 +55,8 @@ body {
   &:disabled {
     color: #bbbbbb;
     background: #d8d8d8;
+    border-color: #dedede;
+    box-shadow: none;
   }
 
   &-light {
@@ -66,5 +68,15 @@ body {
   &:hover {
     background: #e28800;
     color: #fff;
+    transform: translateY(-3px);
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(0)
   }
 }

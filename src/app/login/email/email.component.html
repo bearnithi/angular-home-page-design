@@ -1,1 +1,2 @@
-<input type="email"  class="form-control email" (change)="writeValue($event.target.value)"/>
+<input type="email" class="form-control email" (change)="writeValue($event.target.value)"
+(blur)="onTouched()"/>

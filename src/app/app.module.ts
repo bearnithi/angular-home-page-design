@@ -18,6 +18,7 @@ import { InfoBoxComponent } from './home/info-box/info-box.component';
 import { EmailComponent } from './login/email/email.component';
 import { PasswordComponent } from './login/password/password.component';
 import { ButtonComponent } from './login/button/button.component';
+import { ErrorMsgComponent } from './login/error-msg/error-msg.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ButtonComponent } from './login/button/button.component';
     InfoBoxComponent,
     EmailComponent,
     PasswordComponent,
-    ButtonComponent
+    ButtonComponent,
+    ErrorMsgComponent
   ],
   imports: [
     BrowserModule,

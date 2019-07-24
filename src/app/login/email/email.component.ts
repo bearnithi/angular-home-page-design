@@ -25,14 +25,12 @@ export class EmailComponent implements OnInit, ControlValueAccessor {
 
   };
 
-  onTouch(event) {
 
-  };
+  onTouched = (val) => {};
 
   set value(val) {
     this.val = val;
     this.onChange(val);
-    this.onTouch(val);
   }
 
   writeValue(value: any) {
@@ -44,7 +42,7 @@ export class EmailComponent implements OnInit, ControlValueAccessor {
   }
 
   registerOnTouched(fn: any) {
-    this.onTouch = fn;
+    this.onTouched = fn;
   }
 
   private propagateChange = (_: any) => { };

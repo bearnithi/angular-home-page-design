@@ -3,12 +3,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to bottom right, #0e3abf 20%, #476ee2 40%, #0076f9);
 
   & form {
     width: 400px;
     background: #fff;
     border: 1px solid #dedede;
-    box-shadow: 2px 2px 1rem #dedede;
+    box-shadow: 2px 2px 1rem #4a4a4a;
     padding: 20px;
   }
 }

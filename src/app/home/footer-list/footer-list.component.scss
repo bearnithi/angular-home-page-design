@@ -1,0 +1,14 @@
+.footer-lists {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & > .footer-link {
+        padding: 6px;
+
+        & a {
+          color: #367fed;
+          text-decoration: none;
+        }
+    }
+}
